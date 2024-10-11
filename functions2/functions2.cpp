@@ -4,38 +4,71 @@
 
 using namespace std;
 // Функция определяющая знак числа
-void findsign(int x)
+float findsign(int x)
 {
 	if (x < 0)
 	{
-		cout << x << " - отрицательное" << endl;
+		return -1;
 	}
 	else if (x > 0)
 	{
-		cout << x << " - положительное" << endl;
+		return 1;
 	}
 	else
 	{
-		cout << "число равно 0" << endl;
+		return 0;
 	}
 }
 // Функция среднего значения
-float srznach(int y1, int y2)
+float srznach(float y1, float y2)
 {
 	float sz = (y1 + y2) / 2;
-	cout << "Среднее значение: " << sz << endl;
 	return sz;
 }
 // Функция опрделяющая четность числа
-void chetnechet(int x)
+float chetnechet(float x)
 {
 	if (x % 2 == 0)
 	{
-		cout << "Число чётное" << endl;
+		return 1;
 	}
 	else if (x % 2 != 0)
 	{
-		cout << "Число нечётное" << endl;
+		return 0;
+	}
+}
+float _sum(float x, float y){
+	return x + y;
+}
+float _vichitanie(float x, float y){
+	return x - y;
+}
+float _umn(float x, float y){
+	return x * y;
+}
+float _del(float x, float y){
+	return x / y;
+}
+float _Max(float x, float y){
+	if (x > y){
+		return x;
+	}
+	else if (x < y){
+		return y;
+	}
+	else if (x == y){
+		return 0;
+	}
+}
+float _Min(float x, float y){
+	if (x < y){
+		return x;
+	}
+	else if (x > y){
+		return y;
+	}
+	else if (x == y){
+		return 0;
 	}
 }
 int main()
