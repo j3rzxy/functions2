@@ -37,18 +37,23 @@ float chetnechet(float x)
 		return 0;
 	}
 }
+//Сложение
 float _sum(float x, float y){
 	return x + y;
 }
+//Вычтание
 float _vichitanie(float x, float y){
 	return x - y;
 }
+//Умножение
 float _umn(float x, float y){
 	return x * y;
 }
+//Деление
 float _del(float x, float y){
 	return x / y;
 }
+//Максимальное число
 float _Max(float x, float y){
 	if (x > y){
 		return x;
@@ -60,6 +65,7 @@ float _Max(float x, float y){
 		return 0;
 	}
 }
+//Минимальное число
 float _Min(float x, float y){
 	if (x < y){
 		return x;
@@ -80,4 +86,10 @@ int main()
 	findsign(x);
 	srznach(a1, a2);
 	chetnechet(a1);
+	_sum(a1, a2);
+	_vichitanie(a1, a2);
+	_umn(a1, a2);
+	_del(a1, a2);
+	_Min(a1, a2);
+	_Max(a1, a2);
 }
